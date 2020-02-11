@@ -1,9 +1,8 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import axios from "axios";
 import {Contact} from "../contact/contact";
 import styled from 'styled-components'
 import {Header} from "../header/header";
-import {Provider} from "react-redux";
 
 
 const Container = styled.div`
@@ -24,7 +23,7 @@ const Col = styled.div`
     text-align: center;
     border-radius: 5px;
 `;
-export const ContactList = ({contacts, query, fetchContacts, updateQuery}) => {
+export const ContactView = ({contacts, query, fetchContacts, updateQuery}) => {
 
     /*******************************************************************
         fetch contacts details on page loading , and update redux store

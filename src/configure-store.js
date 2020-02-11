@@ -1,4 +1,6 @@
 import { createStore } from 'redux';
-import { countReducer } from './counter/reducer';
+import {contactReducer} from "./contacts/contacts.reducer";
 
-export const store = createStore(countReducer);
+
+export const store = createStore(contactReducer);
+
